@@ -4,7 +4,6 @@
             <inertia-link v-if="$page.props.user" href="/dashboard" class="text-sm text-gray-700 underline">
                 Dashboard
             </inertia-link>
-
             <template v-else>
                 <inertia-link :href="route('login')" class="text-sm text-gray-700 underline">
                     Log in
