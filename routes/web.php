@@ -15,7 +15,7 @@ use Inertia\Inertia;
     ]);
 }); 
 
-Route::get('/',[HomeController::class,'index']);
+Route::get('/',[HomeController::class,'index'])->name('home');
 
 Route::middleware(['auth:sanctum', 'verified'])
 ->get('/dashboard', function () {

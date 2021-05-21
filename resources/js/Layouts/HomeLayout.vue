@@ -5,11 +5,18 @@
             <nav class="bg-white border-b border-gray-100">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
-                        <!-- Logo -->
-                        <div class="flex-shrink-0 flex items-center">
-                            <inertia-link :href="route('dashboard')">
-                                <jet-application-mark class="block h-9 w-auto" />
-                            </inertia-link>
+                        <div class="flex">
+                            <!-- Logo -->
+                            <div class="flex-shrink-0 flex items-center ">
+                                <inertia-link :href="route('dashboard')">
+                                    <jet-application-mark class="block h-9 w-auto" />
+                                </inertia-link>
+                            </div>
+                            <div class="flex-shrink-0 flex items-left ">
+                                <inertia-link :href="route('home')">
+                                    De Pies a Cabeza
+                                </inertia-link>
+                            </div>
                         </div>
                         <div class="flex space-x-8 sm:-my-px sm:ml-10 sm:flex">
                             <inertia-link v-if="$page.props.user" href="/dashboard" class="text-sm text-gray-700 underline">
